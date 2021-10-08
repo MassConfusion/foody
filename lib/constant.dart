@@ -26,3 +26,10 @@ const String homeRestorationId = 'home_list_view';
 const String pantryRestorationId = 'pantry_list_view';
 const String recipesRestorationId = 'recipes_list_view';
 const String shoppingListsRestorationId = 'shopping_lists_list_view';
+
+// Pantry
+const String dialogTitle = 'Add a food to your pantry.';
+const String dialogHint = 'Enter food here';
+const String dialogActionAdd = 'ADD';
+const String dialogActionCancel = 'CANCEL';
+const String floatingButtonTooltip = 'Add Food';
