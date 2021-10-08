@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foody/constant.dart';
 import 'package:foody/pantry.dart';
 import 'package:foody/recipes.dart';
 import 'package:foody/shopping_lists.dart';
@@ -12,13 +13,13 @@ class FoodyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Foody',
-      initialRoute: '/',
+      title: appTitle,
+      initialRoute: homeRoute,
       routes: {
-        '/': (context) => const Home(),
-        '/pantry': (context) => const Pantry(),
-        '/recipes': (context) => const Recipes(),
-        '/shopping_lists': (context) => const ShoppingLists(),
+        homeRoute: (context) => const Home(),
+        pantryRoute: (context) => const Pantry(),
+        recipesRoute: (context) => const Recipes(),
+        shoppingListsRoute: (context) => const ShoppingLists(),
       },
     );
   }
