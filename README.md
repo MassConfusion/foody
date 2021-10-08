@@ -1,5 +1,7 @@
 # foody - Food, Recipe and Shopping list tracker
 
+![Flutter CI](https://github.com/MassConfusion/foody/actions/workflows/flutter-ci.yml/badge.svg?branch=main)
+
 A simple app to track your foods, recipes and shopping list in one place.
 
 ### Food trakcer
