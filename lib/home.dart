@@ -13,25 +13,24 @@ class Home extends StatelessWidget {
         child: ListView(
           restorationId: 'foody_main_menu_list_view',
           padding: const EdgeInsets.symmetric(vertical: 8),
-          children: const [
+          children: [
             ListTile(
-              leading: CircleAvatar(child: Text('P')),
-              title: Text("Pantry"),
-              subtitle: Text("Track your foods here."),
+              leading: const CircleAvatar(child: Text('P')),
+              title: const Text("Pantry"),
+              subtitle: const Text("Track your foods here."),
+              onTap: () => Navigator.of(context).pushNamed('/pantry'),
             ),
             ListTile(
-              leading: ExcludeSemantics(
-                child: CircleAvatar(child: Text('R')),
-              ),
-              title: Text("Recipes"),
-              subtitle: Text("Time to cook up something delicius."),
+              leading: const CircleAvatar(child: Text('R')),
+              title: const Text("Recipes"),
+              subtitle: const Text("Time to cook up something delicius."),
+              onTap: () => Navigator.of(context).pushNamed('/recipes'),
             ),
             ListTile(
-              leading: ExcludeSemantics(
-                child: CircleAvatar(child: Text('S')),
-              ),
-              title: Text("Shopping lists"),
-              subtitle: Text("Things to buy next time you go shopping"),
+              leading: const CircleAvatar(child: Text('S')),
+              title: const Text("Shopping lists"),
+              subtitle: const Text("Things to buy next time you go shopping"),
+              onTap: () => Navigator.of(context).pushNamed('/shopping_lists'),
             ),
           ],
         ),
