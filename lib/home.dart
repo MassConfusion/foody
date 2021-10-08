@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foody/constant.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -7,30 +8,30 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Foody'),
+        title: const Text(homeTitle),
       ),
       body: Scrollbar(
         child: ListView(
-          restorationId: 'foody_main_menu_list_view',
+          restorationId: homeRestorationId,
           padding: const EdgeInsets.symmetric(vertical: 8),
           children: [
             ListTile(
-              leading: const CircleAvatar(child: Text('P')),
-              title: const Text("Pantry"),
-              subtitle: const Text("Track your foods here."),
-              onTap: () => Navigator.of(context).pushNamed('/pantry'),
+              leading: const CircleAvatar(child: Text(pantryAvatarText)),
+              title: const Text(pantryTitle),
+              subtitle: const Text(pantrySubtitle),
+              onTap: () => Navigator.of(context).pushNamed(pantryRoute),
             ),
             ListTile(
-              leading: const CircleAvatar(child: Text('R')),
-              title: const Text("Recipes"),
-              subtitle: const Text("Time to cook up something delicius."),
-              onTap: () => Navigator.of(context).pushNamed('/recipes'),
+              leading: const CircleAvatar(child: Text(recipesAvatarText)),
+              title: const Text(recipesTitle),
+              subtitle: const Text(recipesSubtitle),
+              onTap: () => Navigator.of(context).pushNamed(recipesRoute),
             ),
             ListTile(
-              leading: const CircleAvatar(child: Text('S')),
-              title: const Text("Shopping lists"),
-              subtitle: const Text("Things to buy next time you go shopping"),
-              onTap: () => Navigator.of(context).pushNamed('/shopping_lists'),
+              leading: const CircleAvatar(child: Text(shoppingListsAvatarText)),
+              title: const Text(shoppingListsTitle),
+              subtitle: const Text(shoppingListsSubtitle),
+              onTap: () => Navigator.of(context).pushNamed(shoppingListsRoute),
             ),
           ],
         ),
