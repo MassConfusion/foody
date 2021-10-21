@@ -5,7 +5,7 @@
 A simple app to track your foods, recipes and shopping list in one place.
 
 ### Food trakcer
-Add any kind of food to track, set an expiration date, and get nitified before the food spoils.
+Add any kind of food to track, set an expiration date, and get notified before the food spoils.
 
 ### Recipe book
 Create custom recipes, filter the required ingridients from your "virtual pantry", and add the missing ones to your shopping list.
@@ -15,7 +15,7 @@ Track your "missing" foods, so you don't forget them next time you go shopping.
 
 ## Getting started
 ---
-The is based on [Flutter](https://flutter.dev/), to get started follow the [official documentation](https://flutter.dev/docs/get-started/install). It is recommended to install Android Studio (for the dependenies) even if you plan on using a different editor.
+The App is based on [Flutter](https://flutter.dev/), to get started follow the [official documentation](https://flutter.dev/docs/get-started/install). It is recommended to install Android Studio (for the dependencies) even if you plan on using a different editor.
 
 ### Useful commands
 
