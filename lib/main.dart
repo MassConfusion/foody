@@ -3,7 +3,7 @@ import 'package:foody/constant.dart';
 import 'package:foody/pantry.dart';
 import 'package:foody/recipes.dart';
 import 'package:foody/shopping_lists.dart';
-import './home.dart';
+import 'package:foody/home.dart';
 
 void main() => runApp(const FoodyApp());
 
